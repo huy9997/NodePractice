@@ -20,14 +20,14 @@ app.use((req,res,next)=>{
   })
   next();
 });
-
+/*
 app.use((req,res)=>{
   res.render('maintenance.hbs',{
     pageTitle:'Home Page',
     welcomeMessage:'welcome to my website'
   });
 });
-
+*/
 app.use(express.static(__dirname + '/public'));
 
 
