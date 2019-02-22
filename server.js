@@ -54,6 +54,13 @@ app.get('/about',(req,res) => {
   });
 });
 
+app.get('/portfolio',(req,res) => {
+  res.render('portfolio.hbs',{
+    pageTitle:'portfolio Page',
+    currentYear: new Date().getFullYear()
+  });
+});
+
 app.get('/bad',(req,res)=>{
   res.send({
     error: 'please enter valid data'
